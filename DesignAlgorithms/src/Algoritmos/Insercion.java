@@ -9,11 +9,11 @@ public class Insercion {
 	 * Algoritmo de Insercion para ordenamiento de numeros
 	 * Parametros Array[] de longitud N
 	 */
-	public static int[] algortimoInsercion(int[] Array) 
+	public static int algortimoInsercion(int[] Array) 
 	{
 		int j = 0;
 		int x = 0;
-		
+		int operaciones = 0;
 		if( Array.length > 0 )
 		{
 			for (int i = 2; i < Array.length; i++) 
@@ -25,17 +25,17 @@ public class Insercion {
 				{
 					Array[j+1] = Array[j];
 					j = j- 1;
+					operaciones ++;
 				}
 				Array[j+1] = x;
+				operaciones ++;
 			}
-			
-			System.out.println("Exito en la operacion");
-			return Array;
+			return operaciones;
 		}
 		else
 		{
 			System.out.println("Error, el array en invalido");
-			return Array;
+			return 0;
 		}
 		
 	}

@@ -8,10 +8,11 @@ public class Seleccion {
 	 * Algoritmo de insercion para ordenamiento de numeros
 	 * Toma como parametros un Array de N
 	 */
-	public static int[] algoritmoInsercion( int[] Array ) 
+	public static int algoritmoSeleccion( int[] Array ) 
 	{
 		int minj = 0;
 		int minx = 0;
+		int operaciones = 0;
 
 		if(Array.length != 0)
 		{
@@ -26,19 +27,19 @@ public class Seleccion {
 						minj = j;
 						minx = Array[j];
 					}
+					operaciones ++;
 				}
 
 				Array[minj] = Array[i];
 				Array[i] = minx;
+				operaciones ++;
 			}
-
-			System.out.println("Exito");
-			return Array;
+			return operaciones;
 		}
 		else
 		{
 			System.out.println("Error el Array no posee valores");
-			return Array;
+			return 0;
 		}
 	}
 }
