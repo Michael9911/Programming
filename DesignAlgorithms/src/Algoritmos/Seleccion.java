@@ -6,6 +6,7 @@ public class Seleccion {
 
 	/*
 	 * Algoritmo de insercion para ordenamiento de numeros
+	 * Toma como parametros un Array de N
 	 */
 	public static int[] algoritmoInsercion( int[] Array ) 
 	{
