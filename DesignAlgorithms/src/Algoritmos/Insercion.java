@@ -4,6 +4,11 @@ public class Insercion {
 	
 	public Insercion() {}
 	
+	
+	/*
+	 * Algoritmo de Insercion para ordenamiento de numeros
+	 * Parametros Array[] de longitud N
+	 */
 	public static int[] algortimoInsercion(int[] Array) 
 	{
 		int j = 0;
