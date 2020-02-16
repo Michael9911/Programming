@@ -17,7 +17,7 @@ public class main {
 		GenerarArrays.imprimirArray(ArrayNO);
 		System.out.println("Ordenado");
 		GenerarArrays.imprimirArray(ArrayO);
-		System.out.println("Ordenamiento\n\n");
+		System.out.println("Ordenamiento\n");
 		System.out.println("---------------------------------------------");
 		System.out.println("Seleccion");
 		System.out.println("No Ordenado : "+ Seleccion.algoritmoSeleccion(ArrayNO));

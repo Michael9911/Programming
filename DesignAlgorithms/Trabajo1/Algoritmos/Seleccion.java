@@ -26,6 +26,7 @@ public class Seleccion {
 					{
 						minj = j;
 						minx = Array[j];
+						operaciones ++;
 					}
 					operaciones ++;
 				}
