@@ -1,0 +1,12 @@
+server:  port: 7598  
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update    properties:      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect  datasource:      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3333/products?zeroDataTimeBehavior=converToNull&serverTimeZone=UTC
+      username: Administrador
+      password: Reyes@2018!!
+    
+        
