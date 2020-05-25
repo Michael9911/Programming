@@ -5,5 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class UserService {
 
-  constructor() { }
+  private baseUrl = 'http://localhost:7598/user';
+  constructor( private http: HttpClient ) { }
 }
